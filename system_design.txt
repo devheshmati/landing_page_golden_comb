@@ -1,0 +1,119 @@
+================================================================================
+                       GOLDENCOMB — SYSTEM DESIGN & WIREFRAME
+================================================================================
+
+1. PROJECT METADATA & IDENTITY
+--------------------------------------------------------------------------------
+Brand Name      : GoldenComb
+Niche           : Premium Raw Organic Honey, Bee Pollen, Royal Jelly & Hive Products
+Target Proposition: 100% Raw, Unfiltered Organic Honey (Sucrose < 1.5%) Direct 
+                  From Beekeepers with Lab Analysis Transparency.
+Target Audience : Health-conscious consumers, organic food enthusiasts, 
+                  gourmet food buyers, and wellness advocates.
+Code Standard   : STRICT RULE — All inline and block code comments must be in ENGLISH.
+
+--------------------------------------------------------------------------------
+2. TECH STACK SPECIFICATION
+--------------------------------------------------------------------------------
+Framework       : Nuxt 3/4 (Vue 3, SSR/SSG ready)
+Language        : TypeScript (Strict typing enabled)
+Styling         : Tailwind CSS v3.4+
+Animation Engine: GSAP v3.12+ (ScrollTrigger plugin)
+Vector Player   : Lottie-web v5.12+
+Smooth Scroll   : Lenis Smooth Scroll v1.0+
+
+--------------------------------------------------------------------------------
+3. DESIGN TOKENS & VISUAL SYSTEM
+--------------------------------------------------------------------------------
+[Color Palette]
+- Honey Amber Primary  : #F59E0B (Brand Main)
+- Honey Dark Hover     : #D97706 (CTA Hover State)
+- Honey Glow           : #FEF3C7 (Light Highlights & Badges)
+- Honey Light Background: #FFFBEB (Soft Card Accents)
+- Pollen Yellow Accent : #FDE047 (Urgency Badges & Highlights)
+- Forest Green Trust   : #15803D (Organic Badges & Guarantee Icons)
+- Forest Light Background: #DCFCE7 (Positive Metrics Backing)
+- Hive Dark Contrast   : #0F172A (Primary Text & Dark Section Backgrounds)
+- Hive Card Dark       : #1E293B (Dark Cards Surface)
+- Warm Cream Background: #FFFDF5 (Global Page Canvas Background)
+- Surface Card Light   : #FFFFFF (White Floating Glass Panels)
+- Text Main            : #1E293B (Primary Readability Tone)
+- Text Muted           : #64748B (Secondary / Description Tone)
+
+[Typography]
+- Font Family Primary  : 'Plus Jakarta Sans', 'Vazirmatn', sans-serif
+- Heading Sizes        : H1 (48px - 64px), H2 (36px - 48px), H3 (24px - 32px)
+- Body Sizes           : Body Large (18px), Body Normal (16px), Body Small (14px)
+
+[Layout & Grid Tokens]
+- Max Container Width  : 1280px (Centered with px-4 / px-6 padding)
+- Grid System          : 12-Column Responsive Layout
+- Spacing Scale        : Base 4px / 8px scale (p-4, p-6, p-8, gap-6, gap-8)
+
+[Borders & Radius]
+- Radius Badge         : 9999px (Full Pill)
+- Radius Button        : 12px
+- Radius Card          : 20px
+- Radius Showcase      : 28px
+- Border Subtle        : 1px solid rgba(245, 158, 11, 0.18)
+
+[Shadows]
+- Shadow Honey         : 0 10px 30px -5px rgba(245, 158, 11, 0.25)
+- Shadow Card          : 0 4px 20px -2px rgba(15, 23, 42, 0.06)
+- Shadow Glow          : 0 0 40px rgba(245, 158, 11, 0.3)
+
+--------------------------------------------------------------------------------
+4. LANDING PAGE WIREFRAME ARCHITECTURE
+--------------------------------------------------------------------------------
+[Section 01: TopBar]
+- Sticky discount & urgency banner (e.g., "Free Cold-Chain Shipping on Orders Over $75 | Code: PUREHIVE").
+
+[Section 02: Header Navigation]
+- Brand Logo (GoldenComb), Navigation Links (Products, Lab Analysis, Our Hives, Quality Proof), CTA Action Button.
+
+[Section 03: Hero Section]
+- Headline: "Pure, Raw Organic Honey Direct From Protected Hives"
+- Subheadline: "Unprocessed, unheated, and lab-tested with sucrose content under 1.5%."
+- Dual CTA Buttons: "Explore Raw Collection" (Primary) | "View Lab Certificate" (Secondary)
+- Interactive Dual-Layer Lottie Bee Flight Initialization Trigger.
+
+[Section 04: Lab Analysis & Sucrose Proof Banner]
+- Key Metric Badges: Sucrose < 1.5%, 100% Active Diastase, Zero Additives, Cold-Filtered.
+
+[Section 05: BeeSpotlight (Interactive Motion Section)]
+- Extra-tall section designed for GSAP ScrollTrigger + Lenis.
+- Dual Lottie Bee + Cast Shadow follows an anatomical scroll trajectory.
+- Bee tilts dynamically based on scroll speed and velocity vector.
+
+[Section 06: Why Raw Organic Honey (Educational Value)]
+- Comparison breakdown explaining live enzymes, raw pollen, and antioxidants vs. store-bought heated syrup.
+
+[Section 07: Products Bento Grid]
+- 4-Card Bento Layout:
+  1. Wildflower Raw Honey (Best Seller)
+  2. Pure Mountain Royal Jelly (Premium)
+  3. Organic Bee Pollen Granules (Energy Boost)
+  4. Fresh Cut Honeycomb Frame (Limited Harvest)
+
+[Section 08: Quality Comparison Matrix]
+- Table comparing GoldenComb Raw Honey vs. Commercial Industrial Honey across 6 critical quality metrics.
+
+[Section 09: Hive Journey (From Hive to Table)]
+- Step-by-step visual timeline: Sustainable Beekeeping -> Gentle Extraction -> Lab Verification -> Cold Packaging.
+
+[Section 10: Customer Reviews & Social Proof]
+- Real customer verified buyer ratings, video testimonials, and trust badges.
+
+[Section 11: FAQ & 100% Money-Back Guarantee]
+- Accordion for common questions + Money-back purity guarantee card.
+
+[Section 12: Footer]
+- Newsletter signup, quick links, certification stamps, and copyright information.
+
+--------------------------------------------------------------------------------
+5. MOTION & INTERACTION RULES (GSAP + LOTTIE + LENIS)
+--------------------------------------------------------------------------------
+- Dual Layer Rendering: Layer 1 = Bee Character Lottie, Layer 2 = Blurred Shadow Lottie.
+- Dynamic Shadow Scale: Shadow expands/shrinks inversely with bee virtual height.
+- Smooth Scroll Sync : Lenis smooth scroll velocity drives GSAP animation progress cleanly.
+================================================================================
