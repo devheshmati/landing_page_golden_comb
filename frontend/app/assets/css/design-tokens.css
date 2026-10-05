@@ -1,0 +1,36 @@
+@theme {
+  /* Brand Primary Colors */
+  --color-honey: #f59e0b;
+  --color-honey-dark: #d97706;
+  --color-honey-glow: #fef3c7;
+  --color-honey-light: #fffbeb;
+
+  /* Accent & Trust Colors */
+  --color-pollen: #fde047;
+  --color-forest: #15803d;
+  --color-forest-light: #dcfce7;
+
+  /* Surfaces & Dark Theme */
+  --color-hive-dark: #0f172a;
+  --color-hive-card: #1e293b;
+  --color-cream: #fffdf5;
+  --color-surface: #ffffff;
+
+  /* Typography Colors */
+  --color-text-main: #1e293b;
+  --color-text-muted: #64748b;
+
+  /* Font Families */
+  --font-sans: "Plus Jakarta Sans", "Vazirmatn", sans-serif;
+
+  /* Border Radii */
+  --radius-badge: 9999px;
+  --radius-btn: 12px;
+  --radius-card: 20px;
+  --radius-showcase: 28px;
+
+  /* Custom Shadows */
+  --shadow-honey: 0 10px 30px -5px rgba(245, 158, 11, 0.25);
+  --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+  --shadow-glow: 0 0 40px rgba(245, 158, 11, 0.3);
+}
