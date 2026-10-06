@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="bg-honey text-honey-light">This is from Home page</h1>
-    <h2 class="bg-honey text-honey-light font-primary">This is from Home page</h2>
+    <SectionsTestSection />
+    <SectionsTestSection class="bg-red-600" />
+    <SectionsTestSection class="bg-blue-600" />
+    <SectionsTestSection class="bg-green-600" />
   </div>
 </template>
