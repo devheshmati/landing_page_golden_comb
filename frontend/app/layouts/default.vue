@@ -1,5 +1,9 @@
 <template>
   <div>
-    <slot />
+    <GlobalsHeader />
+    <main>
+      <slot />
+    </main>
+    <GlobalsFooter />
   </div>
 </template>
