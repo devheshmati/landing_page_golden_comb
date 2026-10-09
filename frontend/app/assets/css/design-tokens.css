@@ -17,8 +17,8 @@
   --color-surface: #ffffff;
 
   /* Typography Colors */
-  --color-text-main: #1e293b;
-  --color-text-muted: #64748b;
+  --color-main: #1e293b;
+  --color-muted: #64748b;
 
   /* Font Families */
   --font-sans: sans-serif;

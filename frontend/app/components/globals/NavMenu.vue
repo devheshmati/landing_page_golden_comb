@@ -13,7 +13,7 @@ const { isNavMenuOpen, toggleNavMenu, closeNavMenu } = useUI();
   >
     <div
       v-if="isNavMenuOpen"
-      class="fixed top-0 left-0 z-100 h-full w-full bg-[rgba(50,50,0,0.8)] flex flex-column gap-2"
+      class="fixed top-0 left-0 z-100 h-full w-full bg-hive-card/90 backdrop-blur-sm flex flex-column gap-2"
     >
       <nav class="text-gray-400 flex flex-col mt-10">
         <!-- make dynamic later -->

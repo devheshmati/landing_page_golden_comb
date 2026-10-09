@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SectionsHeroSection />
     <SectionsTestSection />
     <SectionsTestSection class="bg-red-600" />
     <SectionsTestSection class="bg-blue-600" />

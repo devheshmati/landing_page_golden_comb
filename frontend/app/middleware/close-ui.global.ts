@@ -1,5 +1,6 @@
 export default defineNuxtRouteMiddleware(() => {
-  const { resetOverlays } = useUI();
-
-  resetOverlays();
+  if (import.meta.client) {
+    const { resetOverlays } = useUI();
+    resetOverlays();
+  }
 });
