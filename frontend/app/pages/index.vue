@@ -1,9 +1,33 @@
 <template>
   <div>
     <SectionsHeroSection />
-    <SectionsTestSection />
-    <SectionsTestSection class="bg-red-600" />
-    <SectionsTestSection class="bg-blue-600" />
-    <SectionsTestSection class="bg-green-600" />
+    <SectionsContentWithImageSection
+      header="Header"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod quis! Aliquam ad ullam debitis porro assumenda repellat quod impedit quas magnam harum quisquam atque aspernatur nulla obcaecati dolores maxime, alias iste maiores animi voluptatibus fuga! Alias ipsum amet, explicabo expedita laudantium ratione debitis numquam. Excepturi dolores provident animi veniam."
+      imageUrl="/images/honey_jar2.webp"
+      imageAlt=""
+      imagePose="left"
+    />
+    <SectionsContentWithImageSection
+      header="Header"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod quis! Aliquam ad ullam debitis porro assumenda repellat quod impedit quas magnam harum quisquam atque aspernatur nulla obcaecati dolores maxime, alias iste maiores animi voluptatibus fuga! Alias ipsum amet, explicabo expedita laudantium ratione debitis numquam. Excepturi dolores provident animi veniam."
+      imageUrl="/images/honey_jar2.webp"
+      imageAlt=""
+      imagePose=""
+    />
+    <SectionsContentWithImageSection
+      header="Header"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod quis! Aliquam ad ullam debitis porro assumenda repellat quod impedit quas magnam harum quisquam atque aspernatur nulla obcaecati dolores maxime, alias iste maiores animi voluptatibus fuga! Alias ipsum amet, explicabo expedita laudantium ratione debitis numquam. Excepturi dolores provident animi veniam."
+      imageUrl="/images/honey_jar2.webp"
+      imageAlt=""
+      imagePose="left"
+    />
+    <SectionsContentWithImageSection
+      header="Header"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod quis! Aliquam ad ullam debitis porro assumenda repellat quod impedit quas magnam harum quisquam atque aspernatur nulla obcaecati dolores maxime, alias iste maiores animi voluptatibus fuga! Alias ipsum amet, explicabo expedita laudantium ratione debitis numquam. Excepturi dolores provident animi veniam."
+      imageUrl="/images/honey_jar2.webp"
+      imageAlt=""
+      imagePose=""
+    />
   </div>
 </template>

@@ -46,7 +46,7 @@ onUnmounted(() => {
           v-if="!isNavMenuOpen"
           name="iconmind:menu-outline-thin"
           :class="[
-            'transition-all duration-300',
+            'transition-all duration-300 text-muted hover:text-honey',
             isScrolled ? 'text-3xl' : 'text-4xl',
           ]"
         />
