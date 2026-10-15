@@ -12,11 +12,11 @@ const scrollIndicator = ref<HTMLElement | null>(null);
 <template>
   <section
     ref="heroContainer"
-    class="relative min-h-screen w-full bg-honey-light overflow-hidden flex flex-col justify-between px-6 md:px-12 pt-28 pb-8 text-white select-none"
+    class="relative min-h-screen w-full bg-hive-card overflow-hidden flex flex-col justify-between px-6 md:px-12 pt-28 pb-8 text-white select-none"
   >
     <div
       ref="watermarkText"
-      class="absolute -left-20 top-1/2 -translate-y-1/2 -rotate-90 origin-center text-6xl font-black uppercase text-hive-dark/20 pointer-events-none tracking-widest whitespace-nowrap z-0"
+      class="absolute -left-20 top-1/2 -translate-y-1/2 -rotate-90 origin-center text-6xl font-black uppercase text-pollen pointer-events-none tracking-widest whitespace-nowrap z-0"
     >
       Golden Comb
     </div>
@@ -119,11 +119,11 @@ const scrollIndicator = ref<HTMLElement | null>(null);
 
     <div
       ref="scrollIndicator"
-      class="relative z-10 flex flex-col items-center gap-2 mt-auto pt-4 text-xs text-hive-dark tracking-wider uppercase animate-pulse"
+      class="relative z-10 flex flex-col items-center gap-2 mt-auto pt-4 text-xs text-honey-light tracking-wider uppercase animate-pulse"
     >
       <span>Scroll to explore</span>
       <div
-        class="w-5 h-8 rounded-full border-2 border-hive-dark flex justify-center pt-1"
+        class="w-5 h-8 rounded-full border-2 border-honey-glow flex justify-center pt-1"
       >
         <div class="w-1 h-2 bg-honey rounded-full animate-bounce"></div>
       </div>

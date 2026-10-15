@@ -33,7 +33,7 @@ onUnmounted(() => {
         ]"
       />
     </NuxtLink>
-    <UiButton @click="toggleNavMenu">
+    <UiButton @click="toggleNavMenu" class="cursor-pointer">
       <Transition
         enter-active-class="transition duration-500 ease"
         enter-from-class="opacity-0 translate-y-4"
