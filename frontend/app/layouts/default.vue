@@ -1,7 +1,7 @@
 <template>
   <div>
     <GlobalsHeader />
-    <main>
+    <main class="w-full">
       <slot />
     </main>
     <GlobalsFooter />
