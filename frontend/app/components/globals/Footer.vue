@@ -96,7 +96,6 @@
         >
       </div>
     </div>
+    <SvgsHexagon class="absolute top-20 right-10" />
   </footer>
 </template>
-
-<style></style>
