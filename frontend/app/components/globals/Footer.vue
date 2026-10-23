@@ -96,17 +96,19 @@
         >
       </div>
     </div>
-    <div class="absolute top-20 right-10 z-5 w-[200px] h-[200px] select-none">
+    <div
+      class="absolute top-20 right-10 z-10 w-[200px] h-[200px] pointer-events-none"
+    >
       <SvgsHexagon
         class="absolute top-0 right-10 animate-spin [animation-duration:30s] text-honey/90"
       />
 
       <SvgsHexagon
-        class="absolute top-18 right-5 animate-spin [animation-duration:20s] scale-60 text-honey/80"
+        class="absolute top-[4.5rem] right-5 animate-spin [animation-duration:20s] scale-[0.6] text-honey/80"
       />
 
       <SvgsHexagon
-        class="absolute top-15 right-20 animate-spin [animation-duration:15s] scale-50 text-honey/70"
+        class="absolute top-[3.75rem] right-20 animate-spin [animation-duration:15s] scale-[0.5] text-honey/70"
       />
     </div>
   </footer>
