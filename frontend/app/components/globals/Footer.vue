@@ -77,7 +77,7 @@
         <rect x="3540" y="81" width="60" height="40" fill="currentColor"></rect>
       </svg>
     </div>
-    <div class="text-[16rem] font-bold">
+    <div class="text-[16rem] font-bold z-10">
       <UiButton class="hover:text-honey-glow duration-300 hover:scale-105">
         Let's Talk
       </UiButton>
@@ -96,6 +96,18 @@
         >
       </div>
     </div>
-    <SvgsHexagon class="absolute top-20 right-10" />
+    <div class="absolute top-20 right-10 z-5 w-[200px] h-[200px] select-none">
+      <SvgsHexagon
+        class="absolute top-0 right-10 animate-spin [animation-duration:30s] text-honey/90"
+      />
+
+      <SvgsHexagon
+        class="absolute top-18 right-5 animate-spin [animation-duration:20s] scale-60 text-honey/80"
+      />
+
+      <SvgsHexagon
+        class="absolute top-15 right-20 animate-spin [animation-duration:15s] scale-50 text-honey/70"
+      />
+    </div>
   </footer>
 </template>
