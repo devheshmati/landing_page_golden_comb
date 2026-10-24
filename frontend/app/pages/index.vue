@@ -1,5 +1,6 @@
 <template>
   <div>
+    <UiBee class="fixed top-10 left-2/10 z-20" width="150" />
     <SectionsHeroSection />
     <SectionsContentWithImageSection
       header="Header"

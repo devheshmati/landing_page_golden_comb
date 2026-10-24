@@ -8,5 +8,5 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ["@nuxt/icon"],
+  modules: ["@nuxt/icon", "nuxt-lottie"],
 });
