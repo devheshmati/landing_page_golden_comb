@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="relative h-screen bg-main flex flex-col items-center justify-between font-primary text-honey"
+    class="relative h-full min-h-screen bg-main flex flex-col items-center justify-between font-primary text-honey"
   >
     <div class="w-full">
       <svg
