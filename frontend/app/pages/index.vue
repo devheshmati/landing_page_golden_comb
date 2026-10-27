@@ -15,29 +15,29 @@ onMounted(() => {
   if (!beeNode || !shadowNode) return;
 
   // 5. Dimension settings and vertical flight range
-  const endY = window.innerHeight + 200;
+  const endY = window.innerHeight + 180;
   const centerX = window.innerWidth / 2;
 
   // 6. Flight path keyframes
   const horizontalKeyframes = [
     { progress: 0.0, offset: 0 },
     { progress: 0.1, offset: 0.5 },
-    { progress: 0.25, offset: -0.3 },
-    { progress: 0.4, offset: 0 },
-    { progress: 0.55, offset: -0.8 },
+    { progress: 0.25, offset: 0 },
+    { progress: 0.4, offset: 0.1 },
+    { progress: 0.55, offset: -0.7 },
     { progress: 0.7, offset: 0.1 },
-    { progress: 0.85, offset: -0.3 },
+    { progress: 0.85, offset: -0.5 },
     { progress: 1.0, offset: 0.8 },
   ];
 
   const verticalKeyframes = [
-    { progress: 0.0, drop: 0.0 },
-    { progress: 0.05, drop: 0.10 },
-    { progress: 0.1, drop: 0.25 },
+    { progress: 0.0, drop: 0 },
+    { progress: 0.1, drop: 0.2 },
     { progress: 0.2, drop: 0.5 },
     { progress: 0.5, drop: 0.5 },
-    { progress: 0.8, drop: 0.9 },
-    { progress: 1.0, drop: 1.0 },
+    { progress: 0.8, drop: 0.7 },
+    { progress: 0.9, drop: 0.7 },
+    { progress: 1, drop: 1 },
   ];
 
   const swayReach = window.innerWidth * 0.4;
