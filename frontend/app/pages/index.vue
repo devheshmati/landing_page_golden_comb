@@ -5,6 +5,7 @@ import type { ScrollTrigger as ScrollTriggerType } from "gsap/ScrollTrigger";
 
 const { $gsap, $ScrollTrigger } = useNuxtApp();
 
+const rootEle = ref<HTMLElement | null>(null);
 const beeEle = ref<HTMLElement | ComponentPublicInstance | null>(null);
 const beeShadowEle = ref<HTMLElement | ComponentPublicInstance | null>(null);
 
@@ -106,9 +107,9 @@ let resizeTimer: ReturnType<typeof setTimeout> | undefined;
 function doScrollTriggerRefresh(): void {
   if (resizeTimer) clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
-    updateLayout();                       // recompute viewport-dependent math
-    positionBee(trigger?.progress ?? 0);  // re-place the bee immediately
-    $ScrollTrigger.refresh();             // then re-measure triggers
+    updateLayout(); // recompute viewport-dependent math
+    positionBee(trigger?.progress ?? 0); // re-place the bee immediately
+    $ScrollTrigger.refresh(); // then re-measure triggers
   }, 150);
 }
 
@@ -124,7 +125,7 @@ onMounted(() => {
   positionBee(0);
 
   trigger = $ScrollTrigger.create({
-    trigger: ".spotlight",
+    trigger: rootEle.value,
     start: "top top",
     end: "bottom bottom",
     scrub: true,
@@ -150,7 +151,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div>
+  <div ref="rootEle">
     <UiBee ref="beeEle" :class="['fixed z-100']" :width="beeSize" />
     <!-- bee shadow -->
     <UiBee

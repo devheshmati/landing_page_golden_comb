@@ -1,30 +1,15 @@
-<script setup lang="ts">
-import { ref } from "vue";
-
-const heroContainer = ref<HTMLElement | null>(null);
-const watermarkText = ref<HTMLElement | null>(null);
-const heroContent = ref<HTMLElement | null>(null);
-const heroImage = ref<HTMLElement | null>(null);
-const statsContainer = ref<HTMLElement | null>(null);
-const scrollIndicator = ref<HTMLElement | null>(null);
-</script>
-
 <template>
   <section
-    ref="heroContainer"
     class="relative min-h-screen w-full bg-hive-card overflow-hidden flex flex-col justify-between px-6 md:px-12 pt-28 pb-8 text-white select-none"
   >
     <div
-      ref="watermarkText"
       class="absolute -left-20 top-1/2 -translate-y-1/2 -rotate-90 origin-center text-6xl font-black uppercase text-pollen pointer-events-none tracking-widest whitespace-nowrap z-0"
     >
       Golden Comb
     </div>
 
-    <div
-      class="relative z-10 flex items-center my-auto w-full mx-auto"
-    >
-      <div ref="heroContent" class="w-1/2 flex flex-col gap-6 ps-[12rem]">
+    <div class="relative z-10 flex items-center my-auto w-full mx-auto">
+      <div class="w-1/2 flex flex-col gap-6 ps-[12rem]">
         <p class="text-muted text-base leading-relaxed max-w-md w-2/3">
           Discover the purest, most delicious honey straight from nature to your
           table. Carefully harvested to preserve rich flavor, natural nutrients,
@@ -63,12 +48,10 @@ const scrollIndicator = ref<HTMLElement | null>(null);
       </div>
 
       <div
-        ref="heroImage"
         class="lg:col-span-4 flex justify-center items-center relative"
       ></div>
 
       <div
-        ref="statsContainer"
         class="flex flex-col ms-auto justify-between lg:justify-center gap-6 lg:gap-8 lg:items-end"
       >
         <div class="flex flex-col lg:text-right">
@@ -118,7 +101,6 @@ const scrollIndicator = ref<HTMLElement | null>(null);
     </div>
 
     <div
-      ref="scrollIndicator"
       class="relative z-10 flex flex-col items-center gap-2 mt-auto pt-4 text-xs text-honey-light tracking-wider uppercase animate-pulse"
     >
       <span>Scroll to explore</span>
