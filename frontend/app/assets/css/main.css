@@ -3,6 +3,15 @@
 @import "./font.css";
 @import "./design-tokens.css";
 
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 body {
   position: relative;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
