@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 const { $gsap } = useNuxtApp();
-const { isPreloading } = useUI();
+const { isPreloading, hasPreloaded } = useUI();
 const container = ref<HTMLElement | null>(null);
 
 onMounted(() => {
+  if (hasPreloaded.value) {
+    isPreloading.value = false; // make sure it stays hidden
+    return;
+  }
+
   if (isPreloading.value) {
     $gsap.from(container.value, {
       autoAlpha: 0,
@@ -17,7 +22,7 @@ onMounted(() => {
 
 <template>
   <div>
-    <GlobalsPreloader v-if="isPreloading" />
+    <GlobalsPreloader v-if="isPreloading && !hasPreloaded"  />
     <div ref="container">
       <NuxtLayout>
         <NuxtPage />
