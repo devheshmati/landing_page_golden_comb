@@ -79,7 +79,7 @@ function showBar() {
 }
 
 function onScroll() {
-  if (!isDragging.value) render();
+  render();
   showBar();
 }
 
@@ -183,6 +183,7 @@ onBeforeUnmount(detach);
       class="absolute top-0 inset-x-0 mx-auto w-1.5 cursor-grab rounded-badge bg-linear-to-b from-pollen via-honey to-honey-dark shadow-honey will-change-[transform,height] transition-[width,box-shadow,filter] duration-200 ease-out group-hover:w-2.5 motion-reduce:transition-none data-[dragging]:w-2.5 data-[dragging]:cursor-grabbing data-[dragging]:shadow-glow data-[dragging]:brightness-110 data-[dragging]:transition-none"
       :data-dragging="isDragging || undefined"
       @pointerdown="onThumbPointerDown"
+      @mousedown="onThumbPointerDown"
       @pointermove="onThumbPointerMove"
       @pointerup="onThumbPointerUp"
       @pointercancel="onThumbPointerUp"
