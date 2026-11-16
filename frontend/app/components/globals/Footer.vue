@@ -78,9 +78,11 @@
       </svg>
     </div>
     <div class="text-[16rem] font-bold z-10">
-      <UiButton class="hover:text-honey-glow duration-300 hover:scale-105">
-        Let's Talk
-      </UiButton>
+      <NuxtLink to="/contact">
+        <UiButton class="hover:text-honey-glow duration-300 hover:scale-105">
+          Let's Talk
+        </UiButton>
+      </NuxtLink>
     </div>
     <div class="text-xl font-bold grid grid-cols-2 w-full px-5 pb-2">
       <div class="flex gap-5 items-center justify-start">

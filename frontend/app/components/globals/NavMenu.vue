@@ -24,6 +24,9 @@ const { isNavMenuOpen, toggleNavMenu, closeNavMenu } = useUI();
         <NuxtLink class="py-2 px-4 hover:text-white" to="/contact"
           >Contact</NuxtLink
         >
+        <NuxtLink class="py-2 px-4 hover:text-white" to="/privacy"
+          >Privacy</NuxtLink
+        >
       </nav>
       <UiButton
         @click="closeNavMenu"

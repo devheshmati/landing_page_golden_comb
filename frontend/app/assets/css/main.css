@@ -10,6 +10,7 @@ html {
 
 body {
   position: relative;
+  background: var(--bg-hive-dark);
 }
 
 html::-webkit-scrollbar {
