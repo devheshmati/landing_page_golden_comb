@@ -6,7 +6,7 @@ definePageMeta({
 
 <template>
   <div
-    class="flex flex-col gap-16 bg-black min-h-screen text-amber-50/90 pb-20"
+    class="flex flex-col gap-16 bg-main min-h-screen text-amber-50/90 pb-20"
   >
     <!-- Hero Section -->
     <div class="relative flex flex-col justify-center items-center">
@@ -59,7 +59,7 @@ definePageMeta({
           href="https://github.com/devheshmati"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900 border border-honey/20 hover:border-honey hover:bg-zinc-800 transition-all duration-300 group"
+          class="flex items-center gap-4 p-4 rounded-xl bg-honey-dark/20 border border-honey/20 hover:border-honey hover:bg-zinc-800 transition-all duration-300 group"
         >
           <div
             class="p-3 rounded-lg bg-honey/10 text-honey group-hover:scale-110 transition-transform"
@@ -84,7 +84,7 @@ definePageMeta({
           href="https://github.com/devheshmati/landing_page_golden_comb"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900 border border-honey/20 hover:border-honey hover:bg-zinc-800 transition-all duration-300 group"
+          class="flex items-center gap-4 p-4 rounded-xl bg-honey-dark/20 border border-honey/20 hover:border-honey hover:bg-zinc-800 transition-all duration-300 group"
         >
           <div
             class="p-3 rounded-lg bg-honey/10 text-honey group-hover:scale-110 transition-transform"
@@ -117,7 +117,7 @@ definePageMeta({
           href="https://www.linkedin.com/in/devheshmati/"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900 border border-honey/20 hover:border-honey hover:bg-zinc-800 transition-all duration-300 group"
+          class="flex items-center gap-4 p-4 rounded-xl bg-honey-dark/20 border border-honey/20 hover:border-honey hover:bg-zinc-800 transition-all duration-300 group"
         >
           <div
             class="p-3 rounded-lg bg-honey/10 text-honey group-hover:scale-110 transition-transform"
@@ -161,7 +161,7 @@ definePageMeta({
     </div>
     <!-- Section 2: Portfolio & Developer Spotlight -->
     <div
-      class="w-11/12 md:w-9/10 max-w-6xl mx-auto p-6 md:p-12 bg-zinc-950 border border-honey/20 rounded-2xl shadow-2xl"
+      class="w-11/12 md:w-9/10 max-w-6xl mx-auto p-6 md:p-12 bg-honey-dark/20 border border-honey/20 rounded-2xl shadow-2xl"
     >
       <h3
         class="text-center text-honey-glow text-2xl md:text-3xl font-bold mb-8"

@@ -40,11 +40,12 @@
           </div>
         </div>
 
-        <UiButton
-          class="bg-honey hover:bg-honey-glow text-honey-glow hover:text-honey font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg shadow-honey/20 cursor-pointer"
+        <NuxtLink
+          to="/contact"
+          class="text-center bg-honey hover:bg-honey-glow text-honey-glow hover:text-honey font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg shadow-honey/20 cursor-pointer"
         >
           Contact Us
-        </UiButton>
+        </NuxtLink>
       </div>
 
       <div
