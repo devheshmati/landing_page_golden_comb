@@ -162,31 +162,31 @@ onUnmounted(() => {
 
     <SectionsHeroSection />
     <SectionsContentWithImageSection
-      header="Header"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod quis! Aliquam ad ullam debitis porro assumenda repellat quod impedit quas magnam harum quisquam atque aspernatur nulla obcaecati dolores maxime, alias iste maiores animi voluptatibus fuga! Alias ipsum amet, explicabo expedita laudantium ratione debitis numquam. Excepturi dolores provident animi veniam."
-      imageUrl="/images/honey_jar2.webp"
-      imageAlt=""
+      header="Meet the Keepers"
+      content="Willow & Thyme began with two second-hand hives, a borrowed extractor and a lot of nervous Googling. Nine seasons later we tend forty colonies across the hedgerows and wildflower meadows of the Kentish Weald. We're still a two-person operation — every frame is lifted, spun and jarred by hand. No brokers, no blends, and no honey that's travelled further than we have."
+      imageUrl="/images/Beekeeper_lifting_honeycomb_frame_512.webp"
+      imageAlt="Beekeeper in a white suit lifting a honeycomb frame from an open hive in a meadow at golden hour"
       imagePose="left"
     />
     <SectionsContentWithImageSection
-      header="Header"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod quis! Aliquam ad ullam debitis porro assumenda repellat quod impedit quas magnam harum quisquam atque aspernatur nulla obcaecati dolores maxime, alias iste maiores animi voluptatibus fuga! Alias ipsum amet, explicabo expedita laudantium ratione debitis numquam. Excepturi dolores provident animi veniam."
-      imageUrl="/images/honey_jar2.webp"
-      imageAlt=""
+      header="From Blossom to Bottle"
+      content="Every jar starts in a flower. Our bees forage within three miles of the hive — hawthorn in May, bramble in June, sweet chestnut in July, ivy in the last warm weeks of autumn. We take only the surplus, leave the rest for winter, and never warm the honey above hive temperature. It's strained once through a coarse sieve and poured straight into glass."
+      imageUrl="/images/Honey_dripping_into_glass_jar_512.webp"
+      imageAlt="Close-up of honey dripping from a wooden dipper into a glass jar beside a honeycomb frame"
       imagePose=""
     />
     <SectionsContentWithImageSection
-      header="Header"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod quis! Aliquam ad ullam debitis porro assumenda repellat quod impedit quas magnam harum quisquam atque aspernatur nulla obcaecati dolores maxime, alias iste maiores animi voluptatibus fuga! Alias ipsum amet, explicabo expedita laudantium ratione debitis numquam. Excepturi dolores provident animi veniam."
-      imageUrl="/images/honey_jar2.webp"
-      imageAlt=""
+      header="Raw, Seasonal, Unfiltered"
+      content="Because we never blend, each harvest tastes like the season it came from. Spring is pale, floral and quick to crystallise. Late summer is darker and maltier — good on toast, better on cheese. We bottle in small batches and print the hive number on every label, so you can taste the difference a single meadow makes."
+      imageUrl="/images/Honey_jars_on_wooden_table_512.webp"
+      imageAlt="Three glass jars of honey in different shades on a weathered wooden table with wildflowers"
       imagePose="left"
     />
     <SectionsContentWithImageSection
-      header="Header"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quod quis! Aliquam ad ullam debitis porro assumenda repellat quod impedit quas magnam harum quisquam atque aspernatur nulla obcaecati dolores maxime, alias iste maiores animi voluptatibus fuga! Alias ipsum amet, explicabo expedita laudantium ratione debitis numquam. Excepturi dolores provident animi veniam."
-      imageUrl="/images/honey_jar2.webp"
-      imageAlt=""
+      header="Come Meet the Bees"
+      content="Pull on a suit, light the smoker and open a hive with us. Saturday sessions run April to September: two hours in the apiary, a guided tasting, and a jar to take home. Suits, gloves and nerves all provided. Groups of up to six — book ahead, because the bees don't do spontaneity and neither does our calendar."
+      imageUrl="/images/Two_people_in_bee_suits_512.webp"
+      imageAlt="Two visitors in bee suits laughing beside open hives in a summer meadow, one holding a smoker"
       imagePose=""
     />
   </div>
