@@ -5,7 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="px-[10rem] py-[5rem]">
+  <div class="page px-[10rem] py-[5rem]">
     <div>
       <NuxtLink to="/" class="flex w-fit gap-1 text-sm text-honey hover:text-honey-glow transition-all duration-300">
         <span>-></span>

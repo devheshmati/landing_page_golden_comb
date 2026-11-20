@@ -24,7 +24,7 @@ const handleContactForm = () => {
 
 <template>
   <div
-    class="relative min-h-screen h-full w-3/4 grid grid-cols-2 justify-center items-center mx-auto"
+    class="page relative min-h-screen h-full w-3/4 grid grid-cols-2 justify-center items-center mx-auto"
   >
     <!-- left -->
     <div class="relative">

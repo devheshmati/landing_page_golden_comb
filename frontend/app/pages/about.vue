@@ -6,7 +6,7 @@ definePageMeta({
 
 <template>
   <div
-    class="flex flex-col gap-16 bg-main min-h-screen text-amber-50/90 pb-20"
+    class="page flex flex-col gap-16 bg-main min-h-screen text-amber-50/90 pb-20"
   >
     <!-- Hero Section -->
     <div class="relative flex flex-col justify-center items-center">
