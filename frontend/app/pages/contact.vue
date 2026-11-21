@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive, onMounted } from "vue";
+import { ref, reactive, onMounted } from "vue";
 
 interface ContactData {
   fullName: string;
@@ -11,14 +11,61 @@ definePageMeta({
   layout: "empty",
 });
 
+const toast = useToast();
+const z = useZod();
+
 const formData = reactive<ContactData>({
   fullName: "",
   email: "",
   message: "",
 });
 
-const handleContactForm = () => {
-  console.log(formData.fullName, formData.email, formData.message);
+const resetForm = () => {
+  formData.fullName = "";
+  formData.email = "";
+  formData.message = "";
+};
+
+const handleContactForm = async () => {
+  if (
+    !formData.fullName.trim() ||
+    !formData.email.trim() ||
+    !formData.message.trim()
+  ) {
+    toast.warning("Warning", "Input can't be empty");
+    return;
+  }
+
+  // check email format
+  const emailValidate = z.object({ email: z.string().email() });
+  const emailCheck = emailValidate.safeParse({ email: formData.email });
+  if (!emailCheck.success) {
+    toast.warning("Warning", "Email format is not true");
+    return;
+  }
+
+  try {
+    const { status, data, statusMessage, message } = await $fetch(
+      "/api/contact",
+      {
+        method: "POST",
+        body: formData,
+      },
+    );
+
+    if (status === 200) {
+      // notification
+      toast.success("Success", "Email sended successfully.");
+      // reset form
+      resetForm();
+      return;
+    }
+
+    throw createError(message || "Request failed");
+  } catch (e) {
+    // notification
+    toast.error("Error", `Submit form failed!`);
+  }
 };
 </script>
 
@@ -72,8 +119,16 @@ const handleContactForm = () => {
         </NuxtLink>
         <div class="flex flex-col gap-5">
           <div class="flex flex-col gap-1">
-            <label class="text-bold uppercase text-sm" for="">Full Name</label>
+            <label class="text-bold uppercase text-sm" for="full-name-input"
+              >Full Name
+              <span
+                v-if="!formData.fullName.length > 0"
+                class="text-[0.7rem] text-orange-200 lowercase"
+                >Empty</span
+              ></label
+            >
             <input
+              id="full-name-input"
               type="text"
               v-model="formData.fullName"
               placeholder="Enter your full name..."
@@ -81,17 +136,33 @@ const handleContactForm = () => {
             />
           </div>
           <div class="flex flex-col gap-1">
-            <label class="text-bold uppercase text-sm" for="">Email</label>
+            <label class="text-bold uppercase text-sm" for="email-input"
+              >Email
+              <span
+                v-if="!formData.email.length > 0"
+                class="text-[0.7rem] text-orange-200 lowercase"
+                >Empty</span
+              ></label
+            >
             <input
-              type="email"
+              id="email-input"
+              type="text"
               v-model="formData.email"
               placeholder="Enter your full name..."
               class="border-1 border-white p-2 rounded-lg text-honey-glow"
             />
           </div>
           <div class="flex flex-col gap-1">
-            <label class="text-bold uppercase text-sm" for="">Message</label>
+            <label class="text-bold uppercase text-sm" for="message-input"
+              >Message
+              <span
+                v-if="!formData.message.length > 0"
+                class="text-[0.7rem] text-orange-200 lowercase"
+                >Empty</span
+              ></label
+            >
             <textarea
+              id="message-input"
               rows="3"
               type="text"
               v-model="formData.message"

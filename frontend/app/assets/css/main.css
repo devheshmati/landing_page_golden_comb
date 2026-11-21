@@ -2,6 +2,7 @@
 @import "lenis/dist/lenis.css";
 @import "./font.css";
 @import "./design-tokens.css";
+@import "nuxt-notify/styles";
 
 html {
   scrollbar-width: none;

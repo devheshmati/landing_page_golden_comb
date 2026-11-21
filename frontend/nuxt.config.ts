@@ -19,5 +19,21 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ["@nuxt/icon", "nuxt-lottie"],
+  modules: [
+    "@nuxt/icon",
+    "nuxt-lottie",
+    "nuxt-nodemailer",
+    "nuxt-notify",
+    "nuxt-zod",
+  ],
+  nodemailer: {
+    from: '"Bee Farm Golden Comb" <reza2boyce@gmail.com>',
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
+    auth: {
+      user: "reza2boyce@gmail.com",
+      pass: process.env.GMAIL_APP_PASSWORD,
+    },
+  },
 });
