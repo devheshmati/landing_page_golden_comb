@@ -28,9 +28,10 @@ export default defineNuxtConfig({
   ],
   nodemailer: {
     from: '"Bee Farm Golden Comb" <reza2boyce@gmail.com>',
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
+    // host: "smtp.gmail.com",
+    // port: 465,
+    // secure: true,
+    service: "gmail",
     auth: {
       user: "reza2boyce@gmail.com",
       pass: process.env.GMAIL_APP_PASSWORD,
