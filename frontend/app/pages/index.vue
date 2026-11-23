@@ -152,7 +152,6 @@ onUnmounted(() => {
 
 <template>
   <div class="page" ref="rootEle">
-    <div>This is test</div>
     <UiBee ref="beeEle" :class="['fixed z-100']" :width="beeSize" />
     <!-- bee shadow -->
     <UiBee
