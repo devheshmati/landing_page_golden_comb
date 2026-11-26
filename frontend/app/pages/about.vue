@@ -10,10 +10,11 @@ definePageMeta({
   >
     <!-- Hero Section -->
     <div class="relative flex flex-col justify-center items-center">
-      <img
+      <NuxtImg
         src="/images/Beekeeper_standing_between_hives_512.webp"
         alt="happy female beekeeper standing between hives"
         class="h-screen w-full object-cover brightness-40"
+        loading="lazy"
       />
 
       <div
@@ -196,10 +197,11 @@ definePageMeta({
         <div
           class="relative overflow-hidden rounded-xl border border-honey/30 shadow-lg group"
         >
-          <img
+          <NuxtImg
             src="/images/Coding_on_laptop_with_text_512.webp"
             alt="a person coding on laptop representing devheshmati workflow"
             class="w-full h-[320px] md:h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
           />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4"

@@ -1,114 +1,167 @@
 <template>
   <section
-    class="relative min-h-screen w-full bg-hive-card overflow-hidden flex flex-col justify-between px-6 md:px-12 pt-28 pb-8 text-white select-none"
+    class="relative h-screen bg-hive-dark overflow-hidden flex flex-col justify-between font-primary text-honey-light select-none px-6 sm:px-10 lg:px-16 py-10"
   >
+    <!-- Ambient Background Glows -->
     <div
-      class="absolute -left-20 top-1/2 -translate-y-1/2 -rotate-90 origin-center text-6xl font-black uppercase text-pollen pointer-events-none tracking-widest whitespace-nowrap z-0"
+      class="pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full bg-honey/10 blur-3xl"
+    ></div>
+    <div
+      class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[32rem] w-[32rem] rounded-full bg-honey/15 blur-[120px]"
+    ></div>
+
+    <!-- Main 12-Column Hero Grid -->
+    <div
+      class="relative z-10 my-auto max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center pt-15"
     >
-      Golden Comb
-    </div>
-
-    <div class="relative z-10 flex items-center my-auto w-full mx-auto">
-      <div class="w-1/2 flex flex-col gap-6 ps-[12rem]">
-        <p class="text-muted text-base leading-relaxed max-w-md w-2/3">
-          Discover the purest, most delicious honey straight from nature to your
-          table. Carefully harvested to preserve rich flavor, natural nutrients,
-          and health benefits.
-        </p>
-
-        <div class="flex items-center gap-3">
-          <div class="flex -space-x-2 overflow-hidden">
-            <img
-              class="inline-block h-9 w-9 rounded-full ring-2 ring-hive-card object-cover"
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
-              alt="User Avatar"
-            />
-            <img
-              class="inline-block h-9 w-9 rounded-full ring-2 ring-hive-card object-cover"
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
-              alt="User Avatar"
-            />
-            <img
-              class="inline-block h-9 w-9 rounded-full ring-2 ring-hive-card object-cover"
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
-              alt="User Avatar"
-            />
-          </div>
-          <div class="flex flex-col text-xs">
-            <span class="font-bold text-white text-sm">125K+</span>
-            <span class="text-muted">Satisfied Consumers</span>
-          </div>
+      <!-- Left Column: Brand Story, Social Proof & CTA (5 Cols) -->
+      <div class="lg:col-span-5 flex flex-col items-start gap-6">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-badge bg-forest/20 border border-forest/40 text-forest-light text-xs font-semibold tracking-wide"
+        >
+          <span
+            class="h-2 w-2 rounded-full bg-forest-light animate-pulse"
+          ></span>
+          100% Raw & Unfiltered Harvest
         </div>
 
-        <NuxtLink
-          to="/contact"
-          class="text-center bg-honey hover:bg-honey-glow text-honey-glow hover:text-honey font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg shadow-honey/20 cursor-pointer"
+        <h1
+          class="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-[1.1]"
         >
-          Contact Us
-        </NuxtLink>
+          Pure Liquid Gold,
+          <span class="text-honey block mt-1">Straight From Nature</span>
+        </h1>
+
+        <p
+          class="text-honey-light/75 text-base sm:text-lg leading-relaxed max-w-md"
+        >
+          Discover the purest, most delicious honey carefully harvested to
+          preserve rich flavor, natural enzymes, and authentic health benefits.
+        </p>
+
+        <!-- Primary & Secondary Actions -->
+        <div class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+          <NuxtLink
+            to="/contact"
+            class="w-full sm:w-auto text-center bg-honey hover:bg-honey-dark text-hive-dark font-bold px-8 py-4 rounded-btn transition-all duration-300 shadow-honey hover:shadow-glow hover:-translate-y-0.5 cursor-pointer"
+          >
+            Contact Us
+          </NuxtLink>
+
+          <NuxtLink
+            to="/products"
+            class="w-full sm:w-auto text-center bg-hive-card/80 hover:bg-hive-card text-honey-glow border border-honey/20 font-semibold px-7 py-4 rounded-btn transition-all duration-300"
+          >
+            Explore Harvest
+          </NuxtLink>
+        </div>
+
+        <!-- Consumer Social Proof -->
+        <div
+          class="flex items-center gap-4 pt-4 border-t border-hive-card w-full max-w-sm"
+        >
+          <div class="flex -space-x-2.5 overflow-hidden">
+            <NuxtImg
+              class="inline-block h-10 w-10 rounded-badge ring-2 ring-hive-dark object-cover"
+              src="/images/profile/man-1.webp"
+              alt="Satisfied customer"
+              loading="lazy"
+            />
+            <NuxtImg
+              class="inline-block h-10 w-10 rounded-badge ring-2 ring-hive-dark object-cover"
+              src="/images/profile/women-1.webp"
+              alt="Satisfied customer"
+              loading="lazy"
+            />
+            <NuxtImg
+              class="inline-block h-10 w-10 rounded-badge ring-2 ring-hive-dark object-cover"
+              src="/images/profile/women-2.webp"
+              alt="Satisfied customer"
+              loading="lazy"
+            />
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1.5">
+              <span class="font-bold text-white text-base">125K+</span>
+              <span class="text-pollen text-xs">★★★★★</span>
+            </div>
+            <span class="text-muted text-xs font-medium"
+              >Satisfied Consumers Worldwide</span
+            >
+          </div>
+        </div>
       </div>
 
+      <!-- Center Column: Hero Product Showcase (4 Cols) -->
       <div
-        class="lg:col-span-4 flex justify-center items-center relative"
-      ></div>
-
-      <div
-        class="flex flex-col ms-auto justify-between lg:justify-center gap-6 lg:gap-8 lg:items-end"
+        class="hidden md:block lg:col-span-4 relative flex justify-center items-center my-4 lg:my-0"
       >
-        <div class="flex flex-col lg:text-right">
+        <!-- Decorative Showcase Frame -->
+        <div
+          class="relative w-72 sm:w-80 lg:w-full max-w-sm aspect-[4/5] rounded-showcase flex items-center justify-center p-6 group"
+        >
+          <NuxtImg
+            src="/images/honey_jar2.webp"
+            alt="Golden Comb Honey Jar"
+            class="relative z-10 w-full h-fit flex items-center justify-center"
+            :img-attrs="{
+              class:
+                'max-h-[340px] sm:max-h-[380px] w-auto object-contain drop-shadow-[0_25px_35px_rgba(0,0,0,0.75)]',
+            }"
+            sizes="sm:320px md:380px lg:400px"
+          />
+        </div>
+      </div>
+
+      <!-- Right Column: Key Metrics (3 Cols) -->
+      <div class="lg:col-span-3 grid grid-cols-3 lg:grid-cols-1 gap-3 sm:gap-5">
+        <div
+          class="bg-hive-card/60 backdrop-blur-sm border border-white/5 hover:border-honey/30 transition-colors rounded-card p-4 sm:p-5 flex flex-col items-center lg:items-end text-center lg:text-right shadow-card"
+        >
           <span
-            class="text-honey text-4xl lg:text-5xl font-black tracking-tight"
+            class="text-honey text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight"
             >4K+</span
           >
-          <span class="text-muted text-xs lg:text-sm font-medium mt-1"
+          <span class="text-muted text-xs sm:text-sm font-medium mt-1"
             >Satisfied Clients</span
           >
         </div>
 
-        <div class="flex flex-col lg:text-right">
+        <div
+          class="bg-hive-card/60 backdrop-blur-sm border border-white/5 hover:border-honey/30 transition-colors rounded-card p-4 sm:p-5 flex flex-col items-center lg:items-end text-center lg:text-right shadow-card"
+        >
           <span
-            class="text-honey text-4xl lg:text-5xl font-black tracking-tight"
+            class="text-honey text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight"
             >5K+</span
           >
-          <span class="text-muted text-xs lg:text-sm font-medium mt-1"
+          <span class="text-muted text-xs sm:text-sm font-medium mt-1"
             >Successful Sales</span
           >
         </div>
 
-        <div class="flex flex-col lg:text-right">
+        <div
+          class="bg-hive-card/60 backdrop-blur-sm border border-white/5 hover:border-honey/30 transition-colors rounded-card p-4 sm:p-5 flex flex-col items-center lg:items-end text-center lg:text-right shadow-card"
+        >
           <span
-            class="text-honey text-4xl lg:text-5xl font-black tracking-tight"
+            class="text-honey text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight"
             >20+</span
           >
-          <span class="text-muted text-xs lg:text-sm font-medium mt-1"
+          <span class="text-muted text-xs sm:text-sm font-medium mt-1"
             >Unique Products</span
           >
         </div>
       </div>
     </div>
 
+    <!-- Bottom Scroll Indicator -->
     <div
-      class="absolute bottom-0 right-1/20 w-auto h-8/10 aspect-square flex justify-center items-center"
-    >
-      <div
-        class="absolute inset-0 bg-honey/10 blur-3xl rounded-full scale-90"
-      ></div>
-
-      <img
-        src="/images/honey_jar2.webp"
-        alt="Golden Comb Honey Jar"
-        class="relative z-0 max-h-[450px] w-auto object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.7)]"
-      />
-    </div>
-
-    <div
-      class="relative z-10 flex flex-col items-center gap-2 mt-auto pt-4 text-xs text-honey-light tracking-wider uppercase animate-pulse"
+      class="absolute left-1/2 -translate-x-1/2 bottom-10 z-10 flex flex-col items-center gap-2 pt-4 text-[11px] font-semibold text-honey-glow/70 tracking-[0.2em] uppercase"
     >
       <span>Scroll to explore</span>
       <div
-        class="w-5 h-8 rounded-full border-2 border-honey-glow flex justify-center pt-1"
+        class="w-5 h-8 rounded-badge border-2 border-honey/40 flex justify-center pt-1.5"
       >
-        <div class="w-1 h-2 bg-honey rounded-full animate-bounce"></div>
+        <div class="w-1 h-2 bg-honey rounded-badge animate-bounce"></div>
       </div>
     </div>
   </section>

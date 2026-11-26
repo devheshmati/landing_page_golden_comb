@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     "nuxt-nodemailer",
     "nuxt-notify",
     "nuxt-zod",
+    "@nuxt/image",
   ],
   nodemailer: {
     from: '"Bee Farm Golden Comb" <reza2boyce@gmail.com>',

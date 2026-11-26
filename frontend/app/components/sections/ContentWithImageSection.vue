@@ -18,18 +18,24 @@ withDefaults(
 
 <template>
   <section
-    class="relative grid grid-cols-2 font-primary bg-cream min-h-screen overflow-hidden"
+    class="relative grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12 font-primary bg-cream min-h-[auto] lg:min-h-screen px-6 py-16 sm:px-10 md:py-20 lg:px-16 overflow-hidden"
   >
     <!-- Text column -->
-    <div class="relative flex flex-col justify-center items-center px-12">
-      <div class="flex w-2/3 max-w-md flex-col gap-4">
+    <div
+      class="relative flex flex-col justify-center items-center lg:items-start order-2 lg:order-none"
+    >
+      <div
+        class="flex w-full max-w-lg flex-col gap-4 sm:gap-5 text-center lg:text-left"
+      >
         <h3
-          class="text-3xl font-bold uppercase leading-tight text-main lg:text-4xl"
+          class="text-2xl sm:text-3xl lg:text-4xl font-bold uppercase leading-tight text-main tracking-tight"
         >
           {{ header }}
         </h3>
 
-        <p class="leading-relaxed text-muted text-justify">
+        <p
+          class="text-sm sm:text-base leading-relaxed text-muted text-left sm:text-justify"
+        >
           {{ content }}
         </p>
       </div>
@@ -38,14 +44,15 @@ withDefaults(
     <!-- Image column -->
     <div
       :class="[
-        'relative flex items-center justify-center p-12',
-        imagePose === 'left' ? 'order-first' : '',
+        'relative flex items-center justify-center p-2 sm:p-6 lg:p-10 order-1',
+        imagePose === 'left' ? 'lg:order-first' : 'lg:order-last',
       ]"
     >
-      <img
+      <NuxtImg
         :src="imageUrl"
         :alt="imageAlt"
-        class="max-h-[70%] w-auto rounded-showcase object-contain"
+        loading="lazy"
+        class="w-full max-w-sm sm:max-w-md lg:max-w-lg max-h-[360px] sm:max-h-[440px] lg:max-h-[70vh] object-contain rounded-showcase shadow-card"
       />
     </div>
   </section>

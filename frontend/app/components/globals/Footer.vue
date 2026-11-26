@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="relative h-full min-h-screen bg-main flex flex-col items-center justify-between font-primary text-honey"
+    class="relative h-[500px] md:h-screen bg-main flex flex-col items-center justify-between font-primary text-honey"
   >
     <div class="w-full">
       <svg
@@ -77,19 +77,19 @@
         <rect x="3540" y="81" width="60" height="40" fill="currentColor"></rect>
       </svg>
     </div>
-    <div class="text-[16rem] font-bold z-10">
+    <div class="text-5xl md:text-[16rem] font-bold z-10 mt-20 md:mt-0">
       <NuxtLink to="/contact">
         <UiButton class="hover:text-honey-glow duration-300 hover:scale-105">
           Let's Talk
         </UiButton>
       </NuxtLink>
     </div>
-    <div class="text-xl font-bold grid grid-cols-2 w-full px-5 pb-2">
-      <div class="flex gap-5 items-center justify-start">
+    <div class="text-xl font-bold grid grid-cols-1 md:grid-cols-2 w-full gap-5 md:gap-0 px-5 pb-20 md:pb-2">
+      <div class="flex gap-5 items-center justify-center md:justify-start">
         <span>©2026</span>
         <span>devheshmati.ir</span>
       </div>
-      <div class="flex gap-2 justify-end items-center">
+      <div class="flex gap-8 md:gap-2 justify-center md:justify-end items-center">
         <NuxtLink class="hover:text-honey-glow duration-300" to="/about"
           >About</NuxtLink
         >
@@ -99,7 +99,7 @@
       </div>
     </div>
     <div
-      class="absolute top-20 right-10 z-10 w-[200px] h-[200px] pointer-events-none"
+      class="absolute top-10 md:top-20 right-0 md:right-10 z-10 w-[200px] h-[200px] pointer-events-none"
     >
       <SvgsHexagon
         class="absolute top-0 right-10 animate-spin [animation-duration:30s] text-honey/90"
