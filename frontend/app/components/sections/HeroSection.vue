@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative h-screen bg-hive-dark overflow-hidden flex flex-col justify-between font-primary text-honey-light select-none px-6 sm:px-10 lg:px-16 py-10"
+    class="relative min-h-screen bg-hive-dark overflow-hidden flex flex-col justify-between font-primary text-honey-light select-none px-6 sm:px-10 lg:px-16 py-10"
   >
     <!-- Ambient Background Glows -->
     <div
@@ -12,10 +12,10 @@
 
     <!-- Main 12-Column Hero Grid -->
     <div
-      class="relative z-10 my-auto max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center pt-15"
+      class="relative z-10 my-auto max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 pt-15"
     >
       <!-- Left Column: Brand Story, Social Proof & CTA (5 Cols) -->
-      <div class="lg:col-span-5 flex flex-col items-start gap-6">
+      <div class="col-span-6 flex flex-col items-start gap-6">
         <div
           class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-badge bg-forest/20 border border-forest/40 text-forest-light text-xs font-semibold tracking-wide"
         >
@@ -87,7 +87,7 @@
 
       <!-- Center Column: Hero Product Showcase (4 Cols) -->
       <div
-        class="hidden md:block lg:col-span-4 relative flex justify-center items-center my-4 lg:my-0"
+        class="absolute md:left-3/5 lg:left-1/2 top-1/2 -translate-y-1/2 hidden md:block lg:col-span-4 flex justify-center items-center my-4 lg:my-0"
       >
         <!-- Decorative Showcase Frame -->
         <div
@@ -96,7 +96,7 @@
           <NuxtImg
             src="/images/honey_jar2.webp"
             alt="Golden Comb Honey Jar"
-            class="relative z-10 w-full h-fit flex items-center justify-center"
+            class="z-10 w-full h-fit"
             :img-attrs="{
               class:
                 'max-h-[340px] sm:max-h-[380px] w-auto object-contain drop-shadow-[0_25px_35px_rgba(0,0,0,0.75)]',
@@ -107,12 +107,12 @@
       </div>
 
       <!-- Right Column: Key Metrics (3 Cols) -->
-      <div class="lg:col-span-3 grid grid-cols-3 lg:grid-cols-1 gap-3 sm:gap-5">
+      <div class="col-span-6 grid grid-cols-3 lg:grid-cols-1 gap-3 sm:gap-5">
         <div
-          class="bg-hive-card/60 backdrop-blur-sm border border-white/5 hover:border-honey/30 transition-colors rounded-card p-4 sm:p-5 flex flex-col items-center lg:items-end text-center lg:text-right shadow-card"
+          class="p-4 sm:p-5 flex flex-col items-center lg:items-end text-center"
         >
           <span
-            class="text-honey text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight"
+            class="text-honey text-2xl md:text-5xl font-black tracking-tight"
             >4K+</span
           >
           <span class="text-muted text-xs sm:text-sm font-medium mt-1"
@@ -121,10 +121,10 @@
         </div>
 
         <div
-          class="bg-hive-card/60 backdrop-blur-sm border border-white/5 hover:border-honey/30 transition-colors rounded-card p-4 sm:p-5 flex flex-col items-center lg:items-end text-center lg:text-right shadow-card"
+          class="p-4 sm:p-5 flex flex-col items-center lg:items-end text-center"
         >
           <span
-            class="text-honey text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight"
+            class="text-honey text-2xl lg:text-5xl font-black tracking-tight"
             >5K+</span
           >
           <span class="text-muted text-xs sm:text-sm font-medium mt-1"
@@ -133,10 +133,10 @@
         </div>
 
         <div
-          class="bg-hive-card/60 backdrop-blur-sm border border-white/5 hover:border-honey/30 transition-colors rounded-card p-4 sm:p-5 flex flex-col items-center lg:items-end text-center lg:text-right shadow-card"
+          class="p-4 sm:p-5 flex flex-col items-center lg:items-end text-center"
         >
           <span
-            class="text-honey text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight"
+            class="text-honey text-2xl lg:text-5xl font-black tracking-tight"
             >20+</span
           >
           <span class="text-muted text-xs sm:text-sm font-medium mt-1"

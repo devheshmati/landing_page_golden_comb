@@ -47,7 +47,7 @@ onUnmounted(() => {
           ]"
         />
         <span
-          class="hidden xs:inline-block sm:inline-block text-sm sm:text-base font-extrabold uppercase tracking-[0.18em] text-honey-light group-hover:text-honey transition-colors"
+          class="hidden inline-block text-sm sm:text-base font-extrabold uppercase tracking-[0.18em] text-honey-light group-hover:text-honey transition-colors"
         >
           Golden Comb
         </span>
