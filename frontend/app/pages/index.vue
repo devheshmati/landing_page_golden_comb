@@ -33,9 +33,9 @@ const horizontalKeyframes = [
 
 const verticalKeyframes = [
   { progress: 0.0, drop: 0 },
-  { progress: 0.1, drop: 0.2 },
-  { progress: 0.2, drop: 0.5 },
-  { progress: 0.5, drop: 0.5 },
+  { progress: 0.1, drop: 0.4 },
+  { progress: 0.2, drop: 0.6 },
+  { progress: 0.5, drop: 0.6 },
   { progress: 0.8, drop: 0.7 },
   { progress: 0.9, drop: 0.7 },
   { progress: 1, drop: 1 },

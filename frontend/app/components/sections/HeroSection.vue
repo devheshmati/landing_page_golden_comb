@@ -47,13 +47,6 @@
           >
             Contact Us
           </NuxtLink>
-
-          <NuxtLink
-            to="/products"
-            class="w-full sm:w-auto text-center bg-hive-card/80 hover:bg-hive-card text-honey-glow border border-honey/20 font-semibold px-7 py-4 rounded-btn transition-all duration-300"
-          >
-            Explore Harvest
-          </NuxtLink>
         </div>
 
         <!-- Consumer Social Proof -->

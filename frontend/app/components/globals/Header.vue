@@ -23,7 +23,7 @@ onUnmounted(() => {
     :class="[
       'fixed top-0 left-0 w-full z-40 font-primary transition-all duration-300 ease-out',
       isScrolled
-        ? 'h-16 sm:h-[68px] bg-hive-dark/85 backdrop-blur-md border-b border-honey/15 shadow-card'
+        ? 'h-16 sm:h-[68px] bg-hive-dark/60 backdrop-blur-md shadow-card'
         : 'h-[72px] sm:h-20 lg:h-[90px] bg-transparent',
     ]"
   >
