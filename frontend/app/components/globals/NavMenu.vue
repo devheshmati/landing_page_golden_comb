@@ -52,7 +52,7 @@ onUnmounted(() => {
         role="dialog"
         aria-modal="true"
         aria-label="Site navigation"
-        class="fixed inset-0 z-50 h-dvh w-screen bg-hive-dark/95 backdrop-blur-md font-primary flex flex-col justify-between px-6 sm:px-10 md:px-16 py-6 sm:py-8 overflow-y-auto select-none"
+        class="fixed inset-0 z-100 h-dvh w-screen bg-hive-dark/95 backdrop-blur-md font-primary flex flex-col justify-between px-6 sm:px-10 md:px-16 py-6 sm:py-8 overflow-y-auto select-none"
       >
         <!-- Top Header Bar: Brand Label & Close Button -->
         <div class="flex items-center justify-between w-full max-w-5xl mx-auto">

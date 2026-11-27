@@ -156,7 +156,7 @@ onUnmounted(() => {
     <!-- bee shadow -->
     <UiBee
       ref="beeShadowEle"
-      class="fixed brightness-0 blur-[0.4rem] top-[1rem] left-[7rem] z-100"
+      class="fixed brightness-0 blur-[0.4rem] top-[1rem] left-[7rem] z-50"
       :width="beeSize - 40"
     />
 
