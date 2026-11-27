@@ -44,7 +44,7 @@ withDefaults(
     <!-- Image column -->
     <div
       :class="[
-        'relative flex items-center justify-center p-2 sm:p-6 lg:p-10 order-1',
+        'relative flex items-center justify-center order-1',
         imagePose === 'left' ? 'lg:order-first' : 'lg:order-last',
       ]"
     >
@@ -52,7 +52,7 @@ withDefaults(
         :src="imageUrl"
         :alt="imageAlt"
         loading="lazy"
-        class="w-full max-w-sm sm:max-w-md lg:max-w-lg max-h-[360px] sm:max-h-[440px] lg:max-h-[70vh] object-contain rounded-showcase shadow-card"
+        class="max-h-[360px] sm:max-h-[440px] lg:max-h-[70vh] object-contain md:object-cover md:rounded-showcase w-full md:w-1/2"
       />
     </div>
   </section>
